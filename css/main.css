@@ -341,6 +341,27 @@ footer .copy-right {
     margin-bottom: 30px;
 }
 
+.po-section .card-header {
+    background-color: #b25c32;
+}
+
+.po-section .card-body {
+    font-size: 18px;
+}
+
+.po-section .card-header .btn {
+    color: #ffdfd0;
+    font-size: 20px;
+}
+
+.po-section .card-header .btn:hover,
+.po-section .card-header .btn:focus {
+    color: #fff;
+    font-size: 24px;
+    transition: all 600ms;
+    text-decoration: none;
+}
+
 ul.outline {
     list-style-type: square;
     font-size: 18px;
