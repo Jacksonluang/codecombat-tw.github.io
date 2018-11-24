@@ -612,8 +612,8 @@ ul.outline {
 
     .po-section p,
     .po-section li {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .modal-custom .close {
