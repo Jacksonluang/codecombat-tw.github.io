@@ -610,8 +610,9 @@ ul.outline {
         margin-bottom: 10px;
     }
 
-    .po-section p {
-        font-size: 24px;
+    .po-section p,
+    .po-section li {
+        font-size: 28px;
         line-height: 36px;
     }
 
