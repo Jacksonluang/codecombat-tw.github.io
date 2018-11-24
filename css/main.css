@@ -610,6 +610,11 @@ ul.outline {
         margin-bottom: 10px;
     }
 
+    .po-section p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
     .modal-custom .close {
         font-size: 30px;
         line-height: 24px;
