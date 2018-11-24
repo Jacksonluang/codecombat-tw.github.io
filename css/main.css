@@ -610,11 +610,11 @@ ul.outline {
         margin-bottom: 10px;
     }
 
-    .po-section p,
+    /*.po-section p,
     .po-section li {
         font-size: 28px;
         line-height: 36px;
-    }
+    }*/
 
     .modal-custom .close {
         font-size: 30px;
