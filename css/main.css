@@ -272,6 +272,14 @@ footer .copy-right {
     background-color: #4a67a5;
 }
 
+.jumbotron-cover {
+    margin-top: 80px;
+    background-color: #fff;
+}
+
+.jumbotron-cover p {
+    font-size: 18px;
+}
 
 /* jumbotron-section */
 .jumbotron-section  {
@@ -610,6 +618,7 @@ ul.outline {
         margin-bottom: 10px;
     }
 
+    .jumbotron-cover p,
     .po-section p,
     .po-section li {
         font-size: 20px;
