@@ -24,7 +24,7 @@ a:active {
 
 a:hover,
 a:active {
-    color: #632600;
+    color: #0270e6;
 }
 
 footer {
@@ -367,6 +367,10 @@ footer .copy-right {
 
 .po-section .card-header {
     background-color: #b25c32;
+}
+
+.po-section .card-header-tutors {
+    padding: 20px 0;
 }
 
 .po-section .card-body {
