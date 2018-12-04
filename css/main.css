@@ -247,7 +247,8 @@ footer .copy-right {
 .jumbotron-main,
 .jumbotron-section,
 .jumbotron-lineat,
-.jumbotron-facebook {
+.jumbotron-facebook,
+.jumbotron-dark {
     color: #fff;
     margin-top: 60px;
     padding: 30px 10px 20px 10px;
@@ -258,7 +259,8 @@ footer .copy-right {
 .jumbotron-main h1,
 .jumbotron-section h1,
 .jumbotron-lineat h1,
-.jumbotron-facebook h1 {
+.jumbotron-facebook h1,
+.jumbotron-dark {
     font-size: 32px !important;
 }
 
@@ -273,6 +275,10 @@ footer .copy-right {
 
 .jumbotron-facebook {
     background-color: #4a67a5;
+}
+
+.jumbotron-dark {
+    background-color: #282923;
 }
 
 .page-header {
