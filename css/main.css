@@ -380,7 +380,12 @@ footer .copy-right {
 }
 
 .po-section .card-body {
+    color: #333;
     font-size: 18px;
+}
+
+.po-section .card-body span {
+    color: #007acc;
 }
 
 .po-section .card-header .btn {
