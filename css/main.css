@@ -213,16 +213,16 @@ footer .copy-right {
     margin-bottom: 4vw;
 }
 
-#po-carousel .carousel-caption h1,
-#po-carousel .carousel-caption h2 {
+#po-carousel .carousel-caption h2,
+#po-carousel .carousel-caption h3 {
     text-shadow: 1px 1px #333;
 }
 
-#po-carousel .carousel-caption h1 {
+#po-carousel .carousel-caption h2 {
     font-size: 3vw;
 }
 
-#po-carousel .carousel-caption h2 {
+#po-carousel .carousel-caption h3 {
     font-size: 2vw;
 }
 
