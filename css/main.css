@@ -604,6 +604,11 @@ ul.outline {
     padding: 15px 20px;
 }
 
+pre.free-code {
+    font-size: 18px;
+    background-color: #e2d9c9;
+}
+
 @media (max-width:767px) {
     .navbar-main .navbar-collapse { 
         margin: 0px -30px;
