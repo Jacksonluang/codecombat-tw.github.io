@@ -604,8 +604,12 @@ ul.outline {
     padding: 15px 20px;
 }
 
-pre.free-code {
-    font-size: 18px;
+section.free-code {
+    margin-bottom: 50px;
+}
+
+pre.code-piece {
+    font-size: 16px;
     background-color: #e2d9c9;
 }
 

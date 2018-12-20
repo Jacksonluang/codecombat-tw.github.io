@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Days+One">
-  <link rel="stylesheet" href="/css/main.css?1812170943">
+  <link rel="stylesheet" href="/css/main.css?1812210747">
   <link rel="canonical" href="https://codecombat.tw/">
 </head>
 
@@ -44,35 +44,28 @@
   </header>
 
   <div class="container">
-    <section>
+    <section class="free-code">
       <h2 class="texti-main">Dungeons of Kithgard</h2>
-      <p>
-        Grab the gem and escape the dungeon—but don’t run into anything else. <br>
-        In this level, you’ll learn basic movements for your hero.
-      </p>
-      <hr>
+      <p>Grab the gem and escape the dungeon—but don’t run into anything else. In this level, you’ll learn basic movements for your hero.</p>
       <div>
-        <pre class="free-code">
+        <pre class="code-piece">
           <code>
         # Move towards the gem.
         # Don’t touch the spikes!
         # Type your code below and click Run when you’re done.
         hero.moveRight()
         hero.moveDown()
-        hero.moveRight()  
+        hero.moveRight()
           </code>
         </pre>
       </div>
     </section>
 
-    <section>
+    <section class="free-code">
       <h2 class="texti-main">Gems in the Deep</h2>
-      <p>
-        Quickly collect the gems; you will need them.
-      </p>
-      <hr>
+      <p>Quickly collect the gems; you will need them.</p>
       <div>
-        <pre class="free-code">
+        <pre class="code-piece">
           <code>
         # Grab all the gems using your movement commands.
         hero.moveRight()
@@ -80,6 +73,350 @@
         hero.moveUp()
         hero.moveUp()
         hero.moveRight()
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Shadow Guard</h2>
+      <p>Evade the charging ogre to grab the gems and get to the other side safely. Watch out for the spikes!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Avoid being seen by the ogre. Collect all the gems.
+        hero.moveRight()
+        hero.moveUp()
+        hero.moveRight()
+        hero.moveDown()
+        hero.moveRight()
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Enemy Mine</h2>
+      <p>Tread carefully. Danger is afoot!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Use arguments with move statements to move farther.
+        hero.moveRight(3)
+        hero.moveUp()
+        hero.moveRight()
+        hero.moveDown(3)
+        hero.moveRight(2)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">True Names</h2>
+      <p>Learn an enemy's true name to defeat it.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Defend against "Brak" and "Treg"!
+        # You must attack small ogres twice.
+        hero.moveRight()
+        hero.attack("Brak")
+        hero.attack("Brak")
+        hero.moveRight()
+        hero.attack("Treg")
+        hero.attack("Treg")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">The Raised Sword (practice)</h2>
+      <p>Learn to equip yourself for combat.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Defeat the ogres.
+        # Remember that they each take two hits.
+        hero.attack("Rig")
+        hero.attack("Rig")
+        hero.attack("Gurt")
+        hero.attack("Gurt")
+        hero.attack("Ack")
+        hero.attack("Ack")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Cell Commentary</h2>
+      <p>Trapped in a prison cell with the famous wizard! Say the password to get wizards's help.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Use the "say()" function to say the password.
+        # The password is: "Achoo"
+        hero.say("Achoo")
+        hero.moveUp(2)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Kithgard Librarian</h2>
+      <p>Seek help from a friendly Librarian!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # You need to say a password to open the Library Door!
+        # The password is in the Hints!
+        # Click the blue Hints button above the code window.
+        # If you ever get stuck, click Hints!
+        hero.moveRight()
+        hero.say("Hush")
+        hero.moveRight()
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">The Prisoner</h2>
+      <p>Free the prisoner and you'll gain an ally.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Free the prisoner, defeat the guard and grab the gem.
+        hero.moveRight()
+        hero.attack("Weak Door")
+        hero.moveRight(3)
+        hero.moveDown(3)
+        while True:
+            hero.attack("Two")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Fire Dancing</h2>
+      <p>Save typing (and your hero) with loops!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Code normally executes in the order it's written.
+        # Loops repeat a block of code multiple times.
+        # Use tab or 4 spaces to indent the move lines under the loop.
+        while True:
+            hero.moveRight()
+            # Add a moveLeft command to the loop here
+            hero.moveLeft()
+          </code>
+        </pre>
+      </div>
+    </section>
+    
+    <section class="free-code">
+      <h2 class="texti-main">Haunted Kithmaze</h2>
+      <p>A maze constructed to confuse travelers.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Loops are a better way of doing repetitive things.
+        while True:
+            # Add commands in here to repeat.
+            hero.moveRight(2)
+            hero.moveUp(2)
+          </code>
+        </pre>
+      </div>
+    </section>
+        
+    <section class="free-code">
+      <h2 class="texti-main">Descending Further</h2>
+      <p>Use a loop to navigate efficiently.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Navigate the maze in less than 5 statements.
+        while True:
+            hero.moveRight(2)
+            hero.moveDown()
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Dread Door</h2>
+      <p>Behind a dread door lies a chest full of riches.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Attack the door!
+        # It will take many hits, so use a "while-true" loop.
+        while True:
+            hero.attack("Door")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Hack and Dash</h2>
+      <p>Escape the Dungeon Sprite with the help of a speed potion.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # You can write code before a loop.
+        hero.moveRight()
+        # Break open the "Chest" before using the loop to escape the maze!
+        hero.moveUp()
+        hero.attack("Chest")
+        # Return back back into the main hallway.
+        hero.moveDown()
+        while True:
+            # Move 3 times.
+            hero.moveRight(3)
+            # Move 3 times more.
+            hero.moveDown(3)   
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Cupboards of Kithgard</h2>
+      <p>Who knows what horrors lurk in the Cupboards of Kithgard?</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # There may be something around to help you!
+        # First, move to the Cupboard.
+        hero.moveUp()
+        hero.moveRight(2)
+        hero.moveDown(2)
+        # Then, attack the "Cupboard" inside a while-true loop.
+        while True:
+            hero.attack("Cupboard")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Known Enemy</h2>
+      <p>Using your first variable to achieve victory.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # You can use a variable like a nametag.
+        enemy1 = "Kratt"
+        enemy2 = "Gert"
+        enemy3 = "Ursa"
+        hero.attack(enemy1)
+        hero.attack(enemy1)
+        hero.attack(enemy2)
+        hero.attack(enemy2)
+        hero.attack(enemy3)
+        hero.attack(enemy3)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Master of Names</h2>
+      <p>Use your new coding powers to target nameless enemies.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Your hero doesn't know the names of these enemies!
+        # Use the findNearestEnemy method on your new glasses.
+
+        # Assign the result of hero.findNearestEnemy() to the variable enemy1:
+        enemy1 = hero.findNearestEnemy()
+        # enemy1 now refers to the nearest enemy. Use the variable to attack!
+        hero.attack(enemy1)
+        hero.attack(enemy1)
+
+        # Now that enemy1 is defeated, calling hero.findNearestEnemy() again will result in finding the new nearest enemy.
+        enemy2 = hero.findNearestEnemy()
+        hero.attack(enemy2)
+        hero.attack(enemy2)
+
+        # Assign the result of hero.findNearestEnemy() to the variable enemy3:
+        # Now attack using the enemy3 variable:
+        enemy3 = hero.findNearestEnemy()
+        hero.attack(enemy3)
+        hero.attack(enemy3)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Ingredient Identification</h2>
+      <p>Variables are like labeled bottles that hold data.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # A variable is a container with a label that holds data.
+
+        # This variable is named `someVariableName`
+        # It contains the value `"a string"`
+        someVariableName = "a string"
+
+        # This variable is named `lolol`
+        # It contains the number `42`
+        lolol = 42
+
+        # Create 2 more variables and assign values to them:
+        # You can name them whatever you want, and hold any value in them!
+        # Use `=` to assign a value to a variable.
+        a = "apple juice"
+        b = "black jelly"
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">The Final Kithmaze</h2>
+      <p>To escape you must find your way through an elder Kithman's maze.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Use a while-true loop to both move and attack.
+        while True:
+            hero.moveRight()
+            hero.moveUp()
+            enemy = hero.findNearestEnemy()
+            hero.attack(enemy)
+            hero.attack(enemy)
+            hero.moveRight()
+            hero.moveDown(2)
+            hero.moveUp()    
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Kithgard Gates</h2>
+      <p>Escape the Kithgard dungeons, and don't let the guardians get you.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Build 3 fences to keep the ogres at bay!
+        hero.moveDown()
+        hero.buildXY("fence", 36, 34)
+        hero.buildXY("fence", 36, 30)
+        hero.buildXY("fence", 36, 26)
+        hero.moveRight(3)
           </code>
         </pre>
       </div>
