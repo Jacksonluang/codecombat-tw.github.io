@@ -39,11 +39,654 @@
     <div class="container">
       <div class="jumbotron jumbotron-cover">
         <h1>獨立帳戶 - 計算機科學2 - 免費課程攻略 (Python)</h1>
+        <p>提供 24 關攻略</p>
       </div>
     </div>
   </header>
 
   <div class="container">
+    <section class="free-code">
+      <h2 class="texti-main">Defense of Plainswood</h2>
+      <p>Protect the peasant village of Plainswood from the ogres.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Build two fences on the marks to keep the villagers safe!
+        # Hover your mouse over the world to get X,Y coordinates.
+        hero.moveUp()
+        hero.buildXY("fence", 40, 52)
+        hero.moveDown(2)
+        hero.buildXY("fence", 40, 20)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Winding Trail</h2>
+      <p>Stay alive and navigate through the forest!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Go to the end of the path and build a fence on the X
+        # Use your moveXY(x, y) function.
+
+        # It's the first point of the path.
+        hero.moveXY(36, 59)
+        # Move at the next points of the path.
+        hero.moveXY(37, 13)
+        # Build a fence to stop the ogre.
+        hero.buildXY("fence", 72, 24)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Woodland Cubbies</h2>
+      <p>Navigate through the Backwoods Forest, but check every corner to ensure your safety.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Navigate through the woods, but be on the lookout!
+        # These forest cubbies may contain ogres!
+
+        hero.moveXY(19, 33)
+        enemy = hero.findNearestEnemy()
+        # The if-statement will check if a variable has an ogre.
+        if enemy:
+            hero.attack(enemy)
+            hero.attack(enemy)
+
+        hero.moveXY(49, 51)
+        enemy = hero.findNearestEnemy()
+        if enemy:
+
+            # Attack the enemy here:
+            hero.attack(enemy)
+            hero.attack(enemy)
+            # `pass` statement is a placeholder. It does nothing and helps close if-statements.
+            pass
+
+        hero.moveXY(58, 14)
+        enemy = hero.findNearestEnemy()
+        # Use an if-statement to check if enemy exists:
+        if enemy:
+            # If enemy exists, attack it:
+            hero.attack(enemy)
+            hero.attack(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Nine Gems</h2>
+      <p>Collect all nine gems using at most four moveXY commands.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Collect all the gems in 4 moveXY's or less!
+        # Programmers need to think creatively!
+        hero.moveXY(32, 48)
+        hero.moveXY(67, 48)
+        hero.moveXY(32, 15)
+        hero.moveXY(32, 48)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">If-stravaganza</h2>
+      <p>Surrounded on all sides by incoming ogres! Wait for the right time to attack, then strike!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Defeat the ogres from within their own camp!
+        while True:
+            enemy = hero.findNearestEnemy()
+
+            # Use an if-statement to check if an enemy exists:
+            if enemy:
+                # Attack the enemy if it exists:
+                hero.attack(enemy)
+                hero.attack(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Back to Back</h2>
+      <p>Patrol the village entrances, but stay defensive.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Stay in the middle and defend!
+
+        while True:
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                # Either attack the enemy...
+                hero.attack(enemy)
+                hero.attack(enemy)
+
+                pass
+            else:
+                # ... or move back to your defensive position.
+                hero.moveXY(40, 35)
+                pass
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Woodland Cleaver</h2>
+      <p>Use your new cleave ability to fend off munchkins.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Use your new "cleave" skill as often as you can.
+
+        hero.moveXY(23, 23)
+        while True:
+
+            enemy = hero.findNearestEnemy()
+            if hero.isReady("cleave"):
+                # Cleave the enemy!
+                hero.cleave(enemy)
+                pass
+            else:
+                # Else (if cleave isn't ready), do your normal attack.
+                hero.attack(enemy)
+                pass
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Dueling Grounds</h2>
+      <p>Battle head-to-head against another hero in this basic beginner combat arena.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Defeat the enemy hero in a duel!
+        while True:
+            # Find and attack the enemy inside a loop.
+            # When you're done, submit to the multiplayer ladder!
+            enemy = hero.findNearestEnemy()
+
+            if hero.isReady("cleave"):
+                hero.cleave(enemy)
+            else:
+                hero.attack(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Backwoods Standoff</h2>
+      <p>Yell and cleave your way to victory, like a real barbarian.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Munchkins are attacking!
+        # The swarms will come at regular intervals.
+        # Whenever you can, cleave to clear the mass of enemies.
+
+        while True:
+            enemy = hero.findNearestEnemy()
+            # Use an if-statement with isReady to check "cleave":
+            if hero.isReady("cleave"):
+                # Cleave!
+                hero.cleave(enemy)
+            # Else, if cleave is not ready:
+            else:    
+                # Attack the nearest ogre!
+                hero.attack(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Range Finder</h2>
+      <p>Find the distance to targets. Artillery will do the rest!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Ogres are scouting the forest!
+        # Use the distanceTo method to find where the enemies are.
+        # Say the distance for each enemy to tell the artillery where to fire!
+
+        enemy1 = "Gort"
+        distance1 = hero.distanceTo(enemy1)
+        hero.say(distance1)
+
+        enemy2 = "Smasher"
+        distance2 = hero.distanceTo(enemy2)
+        # Say the distance2 variable!
+
+        hero.say(distance2)
+        # Don't shoot at your friends!
+        friend3 = "Charles"
+
+        # The last ogre.
+        enemy4 = "Gorgnub"
+        # Find and say the distance to enemy4:
+        distance4 = hero.distanceTo(enemy4)
+        hero.say(distance4)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Peasant Protection</h2>
+      <p>Stay close to Victor.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        while True:
+            enemy = hero.findNearestEnemy()
+            distance = hero.distanceTo(enemy)
+            if distance < 10:
+                # Attack if they get too close to the peasant.
+                hero.attack(enemy)
+                pass
+            # Else, stay close to the peasant! Use else.
+            else:
+                hero.moveXY(40, 37)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Maniac Munchkins</h2>
+      <p>Defend yourself while munchkins attack! Break open a chest and take the spoils.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Another chest in the field for the hero to break open!
+        # Attack the chest to break it open.
+        # Some munchkins won't stand idly by while you attack it!
+        # Defend yourself when a munchkin gets too close.
+
+        while True:
+            enemy = hero.findNearestEnemy()
+            distance = hero.distanceTo(enemy)
+            if hero.isReady("cleave"):
+                # First priority is to cleave if it's ready:
+                hero.cleave(enemy)
+                pass
+            elif distance < 5:
+                # Attack the nearest munchkin that gets too close:
+                hero.attack(enemy)
+                pass
+            else:
+                # Otherwise, try to break open the chest:
+                # Use the name of the chest to attack: "Chest".
+                hero.attack("Chest")
+                pass
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Forest Fire Dancing</h2>
+      <p>Only agile heroes can pass! Use nested if statements to dodge the fireballs.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # In this level the evilstone is bad! Avoid them, walking the other direction.
+        while True:
+            evilstone = hero.findNearestItem()
+            if evilstone:
+                pos = evilstone.pos
+                if pos.x == 34:     # == means "is equal to"
+                    # If the evilstone is on the left, go to the right side.
+                    hero.moveXY(46, 22)
+                    pass
+                else:
+                    # If the evilstone is on the right, go to the left side.
+                    hero.moveXY(34, 22)
+                    pass
+            else:
+                # If there's no evilstone, go to the middle.
+
+                hero.moveXY(40, 22)
+                pass
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Village Rover</h2>
+      <p>Patrolling the village can get repetitive... functions make it easier!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # This defines a function called findAndAttackEnemy
+        def findAndAttackEnemy():
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                hero.attack(enemy)
+
+        # This code is not part of the function.
+        while True:
+            # Now you can patrol the village using findAndAttackEnemy
+            hero.moveXY(35, 34)
+            findAndAttackEnemy()
+            
+            # Now move to the right entrance.
+            hero.moveXY(60, 31)
+            # Use findAndAttackEnemy
+            findAndAttackEnemy()
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+
+      <h2 class="texti-main">Backwoods Fork</h2>
+      <p>Use a custom function with parameters to simplify your code!</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Use the checkAndAttack function to make your code easy to read.
+
+        # This function has a parameter.
+        # An parameter is a way of passing information into a function.
+        def checkAndAttack(target):
+            # The 'target' parameter is just a variable!
+            # It contains the argument when the function was called.
+            if target:
+                hero.attack(target)
+            hero.moveXY(43, 34)
+
+        while True:
+            hero.moveXY(58, 52)
+            topEnemy = hero.findNearestEnemy()
+            # Using the checkAndAttack function with the topEnemy variable.
+            checkAndAttack(topEnemy)
+
+            # Move to the bottom X mark.
+            hero.moveXY(58, 16)
+            # Create a variable named bottomEnemy and find the nearest enemy.
+            bottomEnemy = hero.findNearestEnemy()
+            # Use the checkAndAttack function, and include the bottomEnemy variable.
+            checkAndAttack(bottomEnemy)    
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Leave it to Cleaver</h2>
+      <p>Defend the homestead with function parameters.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # This shows how to define a function called cleaveWhenClose
+        # The function defines a parameter called `target`
+        def cleaveWhenClose(target):
+            if hero.distanceTo(target) < 5:
+                pass
+                # Put your attack code here
+                # If cleave is ready, then cleave target
+                if hero.isReady("cleave"):
+                    hero.cleave(target)
+                # else, just attack `target`!
+                else:
+                    hero.attack(target)
+
+
+        # This code is not part of the function.
+        while True:
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                # Note that inside cleaveWhenClose, we refer to the `enemy` as `target`.
+                cleaveWhenClose(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Friend and Foe</h2>
+      <p>A brawl in the woods! Pick out friend from foe and prepare for a battle.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Peasants and peons are gathering in the forest.
+        # Command the peasants to battle and the peons to go away!
+
+        while True:
+            friend = hero.findNearestFriend()
+            if friend:
+                hero.say("To battle, " + friend.id + "!")
+            # Now find the nearest enemy and tell them to go away.
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                hero.say("Go away, " + enemy.id + "!")
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">The Wizard's Door</h2>
+      <p>Use mathematical programming to find the door to the wizards' secret lair.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Move to 'Laszlo' and get his secret number.
+        hero.moveXY(30, 13)
+        las = hero.findNearestFriend().getSecret()
+
+        # Add 7 to 'Laszlo's number to get 'Erzsebet's number.
+        # Move to 'Erzsebet' and say her magic number.
+        erz = las + 7
+        hero.moveXY(17, 26)
+        hero.say(erz)
+
+        # Divide 'Erzsebet's number by 4 to get 'Simonyi's number.
+        # Go to 'Simonyi' and tell him his number.
+        sim = erz / 4
+        hero.moveXY(30, 39)
+        hero.say(sim)
+
+
+        # Multiply 'Simonyi's number by 'Laszlo's to get 'Agata's number.
+        # Go to 'Agata' and tell her her number.
+        aga = sim * las
+        hero.moveXY(43, 25)
+        hero.say(aga)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Coincrumbs</h2>
+      <p>The storeroom is full of treasures, traps, and a speedy ogre guard.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Follow the trail of coins to the red X at the exit.
+
+        while True:
+            # This finds the nearest item.
+            item = hero.findNearestItem()
+            if item:
+                # This stores the item's pos, or position in a variable.
+                itemPosition = item.pos
+                # Put the X and Y coordinates of the item into variables.
+                itemX = itemPosition.x
+                itemY = itemPosition.y
+                # Now, use moveXY to move to itemX and itemY:
+                hero.moveXY(itemX, itemY)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Endangered Burl</h2>
+      <p>Hunt ogres in the woods, but watch out for lumbering beasts.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Only attack enemies of type "munchkin" and "thrower".
+        # Don't attack a "burl". Run away from an "ogre"!
+        while True:
+            enemy = hero.findNearestEnemy()
+            
+            # Remember: don't attack type "burl"!
+            if enemy.type == "burl":
+                hero.say("I'm not attacking that Burl!")
+            
+            # The "type" property tells you what kind of creature it is.
+            if enemy.type == "munchkin":
+                hero.attack(enemy)
+            
+            # Use "if" to attack a "thrower".
+            if enemy.type == "thrower":
+
+                hero.attack(enemy)
+            # If it's an "ogre", use moveXY to run away to the village gate!
+            if enemy.type == "ogre":
+                hero.moveXY(41, 48)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Backwoods Brawl</h2>
+      <p>Stay alive for one minute in this tranquil forest. It gets harder (and more lucrative) each time you win! But if you lose, you must wait a day to resubmit.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Stay alive for one minute.
+        # If you win, it gets harder (and more rewarding).
+        # If you lose, you must wait a day before you can resubmit.
+        # Remember, each submission gets a new random seed.
+
+        while True:
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                if hero.isReady("cleave"):
+                    hero.cleave(enemy)
+                else:
+                    hero.attack(enemy)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Blind Distance</h2>
+      <p>We are ready to shoot! Distance - 300 kilometres! Direction angle - ... Who cares about direction!?</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Tell the wizard the distance to the coming ogres.
+
+        # This function finds the nearest enemy and returns the distance to it.
+        # If there is no enemy, the function returns 0.
+        def nearestEnemyDistance():
+            enemy = hero.findNearestEnemy()
+            result = 0
+            if enemy:
+                result = hero.distanceTo(enemy)
+            return result
+
+        while True:
+            # Call nearestEnemyDistance() and
+            # save the result in the variable enemyDistance.
+            enemyDistance = nearestEnemyDistance()
+            # If the enemyDistance is greater than 0: 
+            if enemyDistance > 0:
+                # Say the value of enemyDistance variable.
+                hero.say(enemyDistance)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Taunting</h2>
+      <p>Ogres are so different.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # Attack munchkins, call brawlers and ignore burls.
+
+        # This function defines the hero's behaviour about enemies.
+        def dealEnemy(enemy):
+            # If enemy.type is "munchkin":
+            if enemy.type == "munchkin":
+                # Then attack it:
+                hero.attack(enemy)
+            # If the enemy's type is "brawler":
+            if enemy.type == "brawler":
+                # Then say something to call the brawler:
+                hero.say("Stay away from me!")
+            pass
+
+        while True:
+            enemy = hero.findNearestEnemy()
+            if enemy:
+                dealEnemy(enemy)
+            else:
+                hero.moveXY(30, 34)
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="free-code">
+      <h2 class="texti-main">Hit and Freeze</h2>
+      <p>The trapped predator still is a dangerous predator.</p>
+      <div>
+        <pre class="code-piece">
+          <code>
+        # You are trapped. Don't move, it'll be painful.
+
+        # This function checks if the enemy is in your attack range.
+        def inAttackRange(enemy):
+            distance = hero.distanceTo(enemy)
+            # Almost all swords have attack range of 3.
+            if distance <= 3:
+                return True
+            else:
+                return False
+
+        # Attack ogres only when they're within reach.
+        while True:
+            # Find the nearest enemy and store it in a variable.
+            enemy = hero.findNearestEnemy()
+            # Call inAttackRange(enemy), with the enemy as the argument
+            # and save the result in the variable canAttack.
+            canAttack = inAttackRange(enemy)
+            # If the result stored in canAttack is True, then attack!
+            if canAttack:
+                hero.attack(enemy)
+            pass
+          </code>
+        </pre>
+      </div>
+    </section>
+       
   </div>
 
   <script src="/js/jquery.min.js"></script>
