@@ -345,6 +345,16 @@ footer .copy-right {
     padding-top: 20px !important;
 }
 
+.po-section .ans-body {
+    margin: 40px 0;
+    padding: 30px 5%;
+    background-color: #f5f2ec;
+}
+
+.po-section .ans-body p {
+    line-height: 32px;
+}
+
 .po-section p.caption {
     font-size: 24px;
 }
@@ -379,12 +389,12 @@ footer .copy-right {
     padding: 20px 0;
 }
 
-.po-section .card-body {
-    color: #333;
+.po-section .ans-body {
+    color: #222;
     font-size: 18px;
 }
 
-.po-section .card-body span {
+.po-section .ans-body span {
     color: #007acc;
 }
 
@@ -610,7 +620,7 @@ section.free-code {
 
 pre.code-piece {
     font-size: 16px;
-    background-color: #e2d9c9;
+    background-color: #e7e0d5;
 }
 
 @media (max-width:767px) {
